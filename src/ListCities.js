@@ -1,18 +1,14 @@
-import React, {useState} from "react";
+import React from 'react';
 
-export default function ListCities() {
-  const [cities, setCities] = useState([
-    { name: 'Москва', description: 'Столица России' },
-    { name: 'Санкт-Петербург', description: 'Северная столица' },
-  ]);
-
+export default function ListCities(props) {
   return (
     <ul>
-      {cities.map( (city) => {
-        return (
-          <li key={city.name}>{city.name}</li>
-        )
-      })}
+      {/* {props.cities.map((city, index) => (
+        <li key={city.name} onClick={() => props.onSelectCity(index)}>
+          {city.name} ({city.description})
+        </li>
+      ))} */}
+      {props.cities.map((city) =><li key={city.name}>{city.name} ({city.description})</li> )}
     </ul>
   );
 }
