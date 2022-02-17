@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 export default function Cities() {
   const [cities, setCities] = useState([
-    { name: 'Москва', desription: 'Столица России' },
-    { name: 'Санкт-Петербург', desription: 'Северная столица' },
+    { name: 'Москва', description: 'Столица России' },
+    { name: 'Санкт-Петербург', description: 'Северная столица' },
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,7 +27,7 @@ export default function Cities() {
   return (
     <div>
       <h3>{city.name}</h3>
-      <textarea value={city.desription} onChange={handleChange} />
+      <textarea value={city.description} onChange={handleChange} />
       
     </div>
   );

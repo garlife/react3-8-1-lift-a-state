@@ -2,8 +2,8 @@ import React, {useState} from "react";
 
 export default function ListCities() {
   const [cities, setCities] = useState([
-    { name: 'Москва', desription: 'Столица России' },
-    { name: 'Санкт-Петербург', desription: 'Северная столица' },
+    { name: 'Москва', description: 'Столица России' },
+    { name: 'Санкт-Петербург', description: 'Северная столица' },
   ]);
 
   return (
