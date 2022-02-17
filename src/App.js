@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
+import ListCities from "./ListCities";
+import Cities from "./Cities"
 
 export default function App() {
+  const [cities, setCities] = useState([
+    {name: 'Москва', desription: 'Столица России' },
+    {name: 'Санкт-Петербург', desription: 'Северная столица' },
+  ])
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <Cities />
+      <ListCities />
     </div>
   );
 }
